@@ -4,7 +4,8 @@
   "description": "Testing with Travis Demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Testing initiated...\""
+    // "test": "./node_modules/mocha/bin/mocha"
+    "test": "git diff --name-only HEAD^"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/taptapdan/testing-demo/issues"
   },
-  "homepage": "https://github.com/taptapdan/testing-demo#readme"
+  "homepage": "https://github.com/taptapdan/testing-demo#readme",
+  "dependencies": {
+    "mocha": "^2.4.5"
+  }
 }
